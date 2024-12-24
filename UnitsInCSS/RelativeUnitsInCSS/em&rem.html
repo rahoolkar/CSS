@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em & rem In CSS</title>
+    <style>
+        .outer{
+            height: 500px;
+            width: 500px;
+            background-color: tomato;
+            border: 2px solid black ;
+            font-size: 10px;
+        }
+        .inner{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black ;
+            background-color: aquamarine;
+            /* Here,2 em means whatever the font size of the parent is double it and set it. Now the font-size of the inner element will be 10px * 2= 20px */
+            font-size: 2em;
+            margin: auto;
+            /* In case of padding, it will adjust its properties according to the font size of the element itself. Now the padding will be 20px *1 = 20px */
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">This is outer box.
+        <div class="inner">This is inner box.</div>
+    </div>
+</body>
+</html>

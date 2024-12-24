@@ -1,0 +1,16 @@
+/* Colors in CSS
+1. Named colors
+2. rgb method
+3. rgba method
+4. Hexcode method */
+
+h1{
+    color: red; 
+    background-color: rgb(200, 145, 120); 
+}
+p{
+    /* hexcode shorthand for #ff00ff */
+    color: #f0f; 
+    /* hexcode */
+    background-color: #0f9b3e;
+}

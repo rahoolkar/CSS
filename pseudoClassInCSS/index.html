@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClass In CSS</title>
+    <style>
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+        button:active{
+            background-color: black;
+            color: white;
+            font-weight: 900;
+        }
+        input[id="yes"]:checked+label{
+            color: green;
+            font-weight: 900;
+        }
+        input[id="no"]:checked+label{
+            color: red;
+            font-weight: 900;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="/action.php">
+        <p>Do you agree to our agreement? </p>
+        <input type="radio" name="agreement" id="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="agreement" id="no">
+        <label for="no">No</label> <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

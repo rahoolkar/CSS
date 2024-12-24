@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid In CSS</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            width: 600px;
+            height: 600px;
+            background-color: black;
+            /* Grid In CSS */
+            display: grid;
+            /* but default, display grid is a block element but if we want we can also display it as a inline element by display:inline-grid. */
+            
+            /* grid-template-rows: 100px 100px 100px 100px;
+            grid-template-columns: 100px 100px 100px 100px; */
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,1fr);
+            row-gap: 15px;
+            column-gap: 15px;
+            justify-items: center;
+            align-items: center;
+        }
+        .item{
+            height: 50px;
+            width: 100px;
+            background-color: goldenrod;
+            border: 2px solid black;
+            text-align: center;
+        }
+        #one{
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+
+            /* grid-column: 1/3; */
+
+            grid-column: 1 / span 2;
+        }
+        #two{
+            /* grid-row-start: 2;
+            grid-row-end: 4; */
+
+            /* grid-row: 2/4; */
+
+            grid-row: 2/span 2;
+        }
+        #three{
+            justify-self: end;
+            align-self: end;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Playground</h1>
+    <div class="container">
+        <div class="item" id="one">1</div>
+        <div class="item" id="two">2</div>
+        <div class="item" id="three">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

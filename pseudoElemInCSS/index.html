@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoElements In CSS</title>
+    <style>
+        /* PseudoElements are denoted by :: */
+        /* 
+        1. First Letter
+        2. First Line
+        3. Selection (to customize the highlight selction of what we have selected )
+         */
+
+        h1{
+            color: red;
+        }
+        h1::first-letter{
+            color: green;
+            font-weight: 100;
+        }
+        p{
+            color: blue;
+        }
+        p::first-letter{
+            color: blueviolet;
+            font-weight: 900;
+        }
+        p::first-line{
+            color: olive;
+        }
+        p::selection{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading - One</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, consectetur exercitationem quo perspiciatis asperiores assumenda facilis inventore deserunt! Nulla nobis, inventore iusto quibusdam cumque aut eos sed eum corporis voluptates. Quidem veritatis voluptatibus aliquid saepe, quos, mollitia ad reprehenderit dolores sed modi doloribus, ipsam nam molestias repellendus. Quos, beatae laudantium.</p>
+</body>
+</html>

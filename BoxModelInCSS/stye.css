@@ -1,0 +1,19 @@
+div{
+    background-color: bisque;
+    /* Height */
+    height: 350px;
+    /* Width */
+    width: 350px;
+    /* Border */
+    border-width: 5px;
+    border-style: solid;
+    border-color: brown;
+    border-top: 5px dotted yellow;
+    /* Border-Radius */
+    border-radius: 50px;
+    /* Padding */
+    padding: 30px;
+    /* Margin */
+    margin:20px
+    
+}

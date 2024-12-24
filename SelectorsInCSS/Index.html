@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors In CSS</title>
+    <style>
+        /* Universal Selector */
+        *{
+            font-family: Impact, sans-serif;
+        }
+        /* Element Selector */
+        button{
+            color: white;
+            background-color: black;
+        }
+        /* ID Selector */
+        #h-one{
+            color: green;
+            text-align: center;
+            text-decoration: double blue underline;
+        }
+        /* Class Selector */
+        .para{
+            letter-spacing: 10px;
+            line-height: 20px;
+        }
+        /* Descendant Selector */
+        .nav ol li{
+            color: purple;
+        }
+        /* Sibling Combinator */
+        p+h3{
+            color: green;
+        }
+        /* Child Combinator */
+        .box3>button{
+            color:yellow;
+        }
+        /* Attribute Selector */
+        button[id="clickme"]{
+            background-color: pink;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading-one" id="h-one">Heading-1</h1>
+    <p class="para" id="p-one">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, repellat atque tenetur dicta deserunt quas maxime exercitationem repellendus veniam quaerat rem? Neque consequatur nulla impedit ratione earum incidunt corrupti amet fuga quibusdam, magnam sed, fugiat quidem, qui tenetur excepturi? Laborum, quae. Repellendus vitae, officia sapiente placeat ea iusto fuga quo.</p>
+    <div class="box2">
+        <p class="p3">Hello World!!</p>
+        <h3>Heading - 3</h3>
+    </div>
+    <div class="nav">
+        <ol>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+        </ol>
+    </div>
+    <div class="box3">
+        <p>Parah-1</p>
+        <p>Parah-2</p>
+        <button>Button-1</button>
+    </div>
+    <button id="clickme">Click Me</button>
+</body>
+</html>

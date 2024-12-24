@@ -1,0 +1,27 @@
+/* Texts in CSS
+1. Text Align
+2. Text Decoration
+3. Text Tranform
+4. Font Size
+5. Font Weight
+6. Font Family
+7. Line Height
+8. Letter Spacing */
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style:wavy ;
+    text-decoration-color:blue ;
+    
+    /* text-decoration: dotted blue underline; */
+    font-weight: 900; 
+    font-size: 30px;
+}
+p{
+    font-size: 15px;
+    letter-spacing: 15px;
+    line-height: 30px;
+    font-weight: lighter;
+    font-family: fantasy,didot;
+}

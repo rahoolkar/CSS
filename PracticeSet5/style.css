@@ -1,0 +1,37 @@
+.outer{
+    height: 400px;
+    width: 400px;
+    border: 2px solid teal;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+.inner{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: grey;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 50px;
+}
+
+.navbar{
+    height: 50px;
+    width: 900px;
+    font-size: 24px;
+    background-color: pink;
+    border: 2px solid teal;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items:baseline;
+}
+.navbar li{
+    height: 50px;
+    width: 80px;
+    display: inline;
+}
